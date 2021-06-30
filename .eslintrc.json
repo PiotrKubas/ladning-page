@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "react-app",
+        "react-app/jest",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        // ...
+        "prettier/prettier": [
+            "warn",
+            {
+                "singleQuote": true,
+                "printWidth": 80,
+                "tabWidth": 4,
+                "trailingComma": "es5"
+            }
+        ]
+    },
+    "plugins": ["prettier"]
+}
